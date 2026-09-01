@@ -64,7 +64,7 @@ Adjust the structure above if your final GitHub folders or filenames are differe
 
 🚀 How to Run
 1. Clone the repository
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/navyap06/library-seat-resource-reservation
 2. Open the project
 Open the project folder in Visual Studio Code.
 3. Run the website
@@ -80,7 +80,6 @@ The currently logged-in user is stored under:
 localStorage → currentUser
 A student account contains information such as:
 {
-    id: Date.now(),
     name: "Student Name",
     email: "student@example.com",
     studentId: "Student ID",

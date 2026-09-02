@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Library Reservation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">📖</div>
+            <div class="logo-text">
+                <h2>Library</h2>
+                <p>
+                   Seat & Resource Reservation
+                </p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.htm">Home</a>
+            <a href="resources.htm">Browse Resources</a>
+            <a href="about.htm">About Us</a>
+        </nav>
+        <div class="nav-buttons">
+            <a href="login.htm" class="login-btn active-button">Login</a>
+            <a href="register.htm" class="register-btn">Register</a>
+        </div>
+
+    </header>
+    <main class="auth-section">
+        <div class="auth-intro">
+            <p class="auth-label">WELCOME BACK!</p>
+            <h1>
+                Login to Your
+                <span>Account</span>
+            </h1>
+            <p class="auth-description">
+                Access your account to reserve seats,
+                manage your reservations, and enjoy a
+                smarter library experience.
+            </p>
+            <div class="study-illustration">
+                <div class="mini-shelf">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mini-table">
+                    <div class="mini-laptop"></div>
+                </div>
+                <div class="mini-chair"></div>
+            </div>
+
+            <div class="security-box">
+                <div class="security-icon">🔒</div>
+                <div>
+                    <h3>
+                        Your data is safe with us.
+                    </h3>
+                    <p>
+                        Your account information is protected
+                        and used only for library services.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-card">
+            <div class="auth-card-icon">🔐</div>
+            <h2>Login</h2>
+            <p class="auth-card-subtitle">
+                Enter your credentials to continue
+            </p>
+
+            <div id="loginMessage" class="auth-message"></div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button
+                            type="button"
+                            class="show-password"
+                            onclick="togglePassword()"
+                        >
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+                        Remember me
+                    </label>
+
+                    <a href="#" onclick="forgotPassword()">
+                        Forgot Password?
+                    </a>
+                </div>
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Login →
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>or continue with</span>
+            </div>
+            <button
+                class="google-btn"
+                onclick="googleLogin()"
+            >
+                <span>G</span>
+                Login with Google
+            </button>
+
+            <p class="account-question">
+                Don't have an account?
+                <a href="register.htm">
+                    Register Now
+                </a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <div class="logo">
+                <div class="logo-icon">📖</div>
+                <div class="logo-text">
+                    <h2>Library</h2>
+                    <p>
+                        Seat & Resource Reservation
+                    </p>
+                </div>
+            </div>
+
+            <p class="footer-description">
+                Making library access simple,
+                smart, and student-friendly.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3> Quick Links </h3>
+            <a href="index.htm"> Home </a>
+            <a href="resources.htm"> Browse Resources </a>
+            <a href="about.htm"> About Us </a>
+        </div>
+
+        <div class="footer-column">
+            <h3> Support </h3>
+            <a href="help.htm"> Help & Support </a>
+            <a href="help.htm"> FAQ </a>
+            <a href="help.htm"> Contact Us </a>
+        </div>
+        <div class="footer-column">
+            <h3> Connect With Us </h3>
+            <div class="social-icons">
+                <span>f</span>
+                <span>◎</span>
+                <span>𝕏</span>
+                <span>✉</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2026 Library Seat & Resource Reservation System.
+        All rights reserved.
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
